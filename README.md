@@ -1,3 +1,8 @@
+# 개발 환경 셋팅
+- brew install yarn
+- brew install node
+- yarn upgrade
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
