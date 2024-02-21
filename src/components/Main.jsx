@@ -1,5 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
+
+import Masonry from '@mui/lab/Masonry'
 
 export default function Main() {
   return (
@@ -97,7 +99,19 @@ export default function Main() {
         <br />
         축하해주시는 마음만 감사히 받겠습니다.
       </GreyText>
-      <GridWrap></GridWrap>
+      <GridWrap>
+        <Masonry columns={3} spacing={3}>
+          {[10, 29, 39, 5, 23].map((height, index) => (
+            <img
+              key={index}
+              src={`https://yunho-hyein.github.io/forever/images/photo0${
+                index + 1
+              }.jpg`}
+              alt="사진"
+            />
+          ))}
+        </Masonry>
+      </GridWrap>
       <Phone></Phone>
     </Wrap>
   )
