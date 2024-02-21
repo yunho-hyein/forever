@@ -55,7 +55,7 @@ export default function Main() {
         성북동 키나
       </Text>
       <Video>
-        <video width="1000" loop autoPlay muted controls>
+        <video width="1000" loop muted controls>
           <source
             src="https://yunho-hyein.github.io/forever/images/video.mp4"
             type="video/mp4"
@@ -97,9 +97,15 @@ export default function Main() {
         <br />
         축하해주시는 마음만 감사히 받겠습니다.
       </GreyText>
+      <GridWrap></GridWrap>
+      <Phone></Phone>
     </Wrap>
   )
 }
+
+const Phone = styled.div``
+
+const GridWrap = styled.div``
 
 const GreyText = styled.div`
   margin-top: 100px;
