@@ -5,19 +5,34 @@ export default function Main() {
   return (
     <Wrap>
       <ImageWrap>
-        <img src="/images/main_img.png" alt="메인 사진" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/main_img.png"
+          alt="메인 사진"
+        />
       </ImageWrap>
       <ImageWrap $marginTop="70px">
-        <img src="/images/main_date.svg" alt="date" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/main_date.svg"
+          alt="date"
+        />
       </ImageWrap>
       <ImageWrap $marginTop="40px">
-        <img src="/images/main_name.svg" alt="name" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/main_name.svg"
+          alt="name"
+        />
       </ImageWrap>
       <ImageWrap $marginTop="470px">
-        <img src="/images/main_our_wedding_day.svg" alt="wedding day" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/main_our_wedding_day.svg"
+          alt="wedding day"
+        />
       </ImageWrap>
       <ImageWrap $marginTop="100px">
-        <img src="/images/calendar.png" alt="calendar" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/calendar.png"
+          alt="calendar"
+        />
       </ImageWrap>
       <Text $marginTop="160px">
         모든 날을 함께 하고 싶은
@@ -41,13 +56,19 @@ export default function Main() {
       </Text>
       <Video>
         <video width="1000" loop autoPlay muted controls>
-          <source src="/images/video.mp4" type="video/mp4" />
+          <source
+            src="https://yunho-hyein.github.io/forever/images/video.mp4"
+            type="video/mp4"
+          />
         </video>
       </Video>
       <Border />
       <Text $marginTop="180px">오시는 길</Text>
       <ImageWrap $marginTop="120px">
-        <img src="/images/map.png" alt="지도" />
+        <img
+          src="https://yunho-hyein.github.io/forever/images/map.png"
+          alt="지도"
+        />
       </ImageWrap>
       <SubText>
         주소
