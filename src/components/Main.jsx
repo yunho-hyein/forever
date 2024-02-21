@@ -100,7 +100,7 @@ export default function Main() {
         축하해주시는 마음만 감사히 받겠습니다.
       </GreyText>
       <GridWrap>
-        <Masonry columns={3} spacing={3}>
+        <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
           {[10, 29, 39, 5, 23].map((height, index) => (
             <img
               key={index}
@@ -119,7 +119,10 @@ export default function Main() {
 
 const Phone = styled.div``
 
-const GridWrap = styled.div``
+const GridWrap = styled.div`
+  padding: 0 100px;
+  margin-top: 260px;
+`
 
 const GreyText = styled.div`
   margin-top: 100px;
