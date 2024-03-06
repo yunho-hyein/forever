@@ -122,29 +122,157 @@ export default function Main() {
         연락처
       </Text>
       <Phone>
-        <div>
-          <div>
+        <PhoneWrap>
+          <Left>
             <p>신랑</p>
             <p>최윤호</p>
-          </div>
-          <div>
-            <img
-              src="https://yunho-hyein.github.io/forever/images/phone.png"
-              alt="phone"
-            />
-            <img
-              src="https://yunho-hyein.github.io/forever/images/text.png"
-              alt="text"
-            />
-          </div>
-        </div>
+          </Left>
+          <Right>
+            <a href="tel: 010-2242-2566">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: 010-2242-2566">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
+        <PhoneWrap $marginTop="100">
+          <Left>
+            <p>신부</p>
+            <p>이혜인</p>
+          </Left>
+          <Right>
+            <a href="tel: 010-5457-8092">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: 010-5457-8092">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
+        <PhoneWrap $marginTop="100">
+          <Left>
+            <p>신랑측 혼주</p>
+            <p>최용길</p>
+          </Left>
+          <Right>
+            <a href="tel: 010-9276-8552">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: 010-9276-8552">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
+        <PhoneWrap $marginTop="50">
+          <Left>
+            <p></p>
+            <p>박복희</p>
+          </Left>
+          <Right>
+            <a href="tel: 010-4941-2377">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: 010-4941-2377">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
+        <PhoneWrap $marginTop="100">
+          <Left>
+            <p>신부측 혼주</p>
+            <p>이장영</p>
+          </Left>
+          <Right>
+            <a href="tel: 010-3734-8092">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: 010-3734-8092">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
+        <PhoneWrap $marginTop="50">
+          <Left>
+            <p> </p>
+            <p>박수정</p>
+          </Left>
+          <Right>
+            <a href="tel: ">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/phone.png"
+                alt="phone"
+              />
+            </a>
+            <a href="sms: ">
+              <img
+                src="https://yunho-hyein.github.io/forever/images/text.png"
+                alt="text"
+              />
+            </a>
+          </Right>
+        </PhoneWrap>
       </Phone>
     </Wrap>
   );
 }
 
+const Right = styled.div`
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  img {
+    margin-left: 50px;
+  }
+`;
+
+const Left = styled.div`
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+`;
+
+const PhoneWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 28px;
+  margin-top: ${(props) => props.$marginTop}px;
+`;
+
 const Phone = styled.div`
   margin-top: 120px;
+  padding: 0 200px;
 `;
 
 const Bold = styled.span`
