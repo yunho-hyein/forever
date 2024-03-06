@@ -75,7 +75,7 @@ export default function Main() {
         />
       </ImageWrap>
       <SubText>
-        주소
+        <Bold>주소</Bold>
         <br />
         서울특별시 성북구 선잠로 46 (성북동 31-1)
         <br />
@@ -83,7 +83,7 @@ export default function Main() {
         <br />
         <br />
         <br />
-        대중교통
+        <Bold>대중교통</Bold>
         <br />
         [지하철] 한성대입구역 6번 출구에서 50m 직진
         <br />
@@ -91,7 +91,7 @@ export default function Main() {
         <br />
         <br />
         <br />
-        주차
+        <Bold>주차</Bold>
         <br />
         무료발렛으로 외부 주차장에 주차됩니다.
         <br />
@@ -121,12 +121,35 @@ export default function Main() {
       <Text $marginTop="150" $mobileMarginTop="80">
         연락처
       </Text>
-      <Phone></Phone>
+      <Phone>
+        <div>
+          <div>
+            <p>신랑</p>
+            <p>최윤호</p>
+          </div>
+          <div>
+            <img
+              src="https://yunho-hyein.github.io/forever/images/phone.png"
+              alt="phone"
+            />
+            <img
+              src="https://yunho-hyein.github.io/forever/images/text.png"
+              alt="text"
+            />
+          </div>
+        </div>
+      </Phone>
     </Wrap>
   );
 }
 
-const Phone = styled.div``;
+const Phone = styled.div`
+  margin-top: 120px;
+`;
+
+const Bold = styled.span`
+  font-family: "YES24MyoungjoB";
+`;
 
 const GridWrap = styled.div`
   padding: 0 100px;
@@ -209,8 +232,8 @@ const ImageWrap = styled.div`
   display: flex;
   justify-content: center;
   img {
+    width: ${(props) => props.$maxWidth}px;
     max-width: 80%;
-    max-width: ${(props) => props.$maxWidth}px;
   }
   @media only screen and (max-width: 600px) {
     margin-top: ${(props) => props.$mobileMarginTop}px;
