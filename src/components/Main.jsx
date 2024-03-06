@@ -57,12 +57,10 @@ export default function Main() {
         성북동 키나
       </Text>
       <Video>
-        <video width="1000" loop muted controls>
-          <source
-            src="https://yunho-hyein.github.io/forever/images/video.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <img
+          src="https://yunho-hyein.github.io/forever/images/video.gif"
+          alt="video"
+        />
       </Video>
       <Border />
       <Text $marginTop="180" $mobileMarginTop="80">
