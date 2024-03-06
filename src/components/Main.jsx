@@ -148,14 +148,12 @@ const GreyText = styled.div`
   letter-spacing: 0em;
   text-align: center;
   color: #00000080;
-  src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
-  font-family: 'Jeju Myeongjo', serif;
   @media only screen and (max-width: 600px) {
     margin-top: 40px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    padding:0 10px;
+    padding: 0 10px;
   }
 `;
 
@@ -166,14 +164,12 @@ const SubText = styled.div`
   line-height: 30px;
   letter-spacing: 0em;
   text-align: center;
-  src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
-  font-family: 'Jeju Myeongjo', serif;
   @media only screen and (max-width: 600px) {
     margin-top: 70px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-    padding:0 10px;
+    padding: 0 10px;
   }
 `;
 
@@ -199,12 +195,10 @@ const Text = styled.div`
   line-height: 60px;
   letter-spacing: 0em;
   text-align: center;
-  src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
-  font-family: 'Jeju Myeongjo', serif;
   @media only screen and (max-width: 600px) {
     font-size: 16px;
     margin-top: ${(props) => props.$mobileMarginTop}px;
-    padding:0 10px;
+    padding: 0 10px;
     line-height: 40px;
   }
 `;
