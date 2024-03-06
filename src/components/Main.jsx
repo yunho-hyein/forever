@@ -56,17 +56,19 @@ export default function Main() {
         <br />
         성북동 키나
       </Text>
-      <Video>
+      <ImageWrap $marginTop="80" $mobileMarginTop="80" $maxWidth="1070">
         <img
           src="https://yunho-hyein.github.io/forever/images/video.gif"
           alt="video"
         />
-      </Video>
-      <Border />
+      </ImageWrap>
+      <Border>
+        <div></div>
+      </Border>
       <Text $marginTop="180" $mobileMarginTop="80">
         오시는 길
       </Text>
-      <ImageWrap $marginTop="120">
+      <ImageWrap $marginTop="120" $mobileMarginTop="50">
         <img
           src="https://yunho-hyein.github.io/forever/images/map.png"
           alt="지도"
@@ -169,21 +171,17 @@ const SubText = styled.div`
 `;
 
 const Border = styled.div`
-  background-color: #000000;
-  width: 80%;
+  width: 100%;
   height: 1px;
-  padding: 0 100px;
-  margin: 130px auto 0;
-`;
-
-const Video = styled.div`
-  margin-top: 200px;
   display: flex;
   justify-content: center;
+  margin: 130px auto 0;
   div {
-    width: 1000px;
-    height: 590px;
-    border: 1px solid #000000;
+    background-color: #d0d5dd;
+    width: 90%;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 60px auto 0;
   }
 `;
 
@@ -211,6 +209,7 @@ const ImageWrap = styled.div`
   justify-content: center;
   img {
     max-width: 80%;
+    max-width: ${(props) => props.$maxWidth}px;
   }
   @media only screen and (max-width: 600px) {
     margin-top: ${(props) => props.$mobileMarginTop}px;
