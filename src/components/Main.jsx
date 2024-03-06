@@ -12,31 +12,31 @@ export default function Main() {
           alt="메인 사진"
         />
       </ImageWrap>
-      <ImageWrap $marginTop="70px">
+      <ImageWrap $marginTop="70" $imgSize="70" $mobileMarginTop="50">
         <img
           src="https://yunho-hyein.github.io/forever/images/main_date.svg"
           alt="date"
         />
       </ImageWrap>
-      <ImageWrap $marginTop="40px">
+      <ImageWrap $marginTop="40" $imgSize="120" $mobileMarginTop="20">
         <img
           src="https://yunho-hyein.github.io/forever/images/main_name.svg"
           alt="name"
         />
       </ImageWrap>
-      <ImageWrap $marginTop="470px">
+      <ImageWrap $marginTop="470" $mobileMarginTop="205">
         <img
           src="https://yunho-hyein.github.io/forever/images/main_our_wedding_day.png"
           alt="wedding day"
         />
       </ImageWrap>
-      <ImageWrap $marginTop="100px">
+      <ImageWrap $marginTop="100" $imgSize="200">
         <img
           src="https://yunho-hyein.github.io/forever/images/calendar.png"
           alt="calendar"
         />
       </ImageWrap>
-      <Text $marginTop="160px">
+      <Text $marginTop="160">
         모든 날을 함께 하고 싶은
         <br />
         소중한 사람을 만났습니다.
@@ -51,7 +51,7 @@ export default function Main() {
         <br />
         이장영 박수정의 장녀 이혜인
       </Text>
-      <Text $marginTop="80px">
+      <Text $marginTop="80">
         2024년 4월 27일 토요일 12시
         <br />
         성북동 키나
@@ -65,8 +65,8 @@ export default function Main() {
         </video>
       </Video>
       <Border />
-      <Text $marginTop="180px">오시는 길</Text>
-      <ImageWrap $marginTop="120px">
+      <Text $marginTop="180">오시는 길</Text>
+      <ImageWrap $marginTop="120">
         <img
           src="https://yunho-hyein.github.io/forever/images/map.png"
           alt="지도"
@@ -146,6 +146,7 @@ const GreyText = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    padding:0 10px;
   }
 `;
 
@@ -159,10 +160,11 @@ const SubText = styled.div`
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
   @media only screen and (max-width: 600px) {
-    margin-top: 50px;
+    margin-top: 70px;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    padding:0 10px;
   }
 `;
 
@@ -186,7 +188,7 @@ const Video = styled.div`
 `;
 
 const Text = styled.div`
-  margin-top: ${(props) => props.$marginTop};
+  margin-top: ${(props) => props.$marginTop}px;
   font-size: 24px;
   font-weight: 400;
   line-height: 60px;
@@ -194,16 +196,35 @@ const Text = styled.div`
   text-align: center;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
+  @media only screen and (max-width: 600px) {
+    font-size: 16px;
+    margin-top: ${(props) => props.$marginTop / 2}px;
+    padding:0 10px;
+  }
 `;
 
 const ImageWrap = styled.div`
-  margin-top: ${(props) => props.$marginTop};
+  margin-top: ${(props) => props.$marginTop}px;
   width: 100%;
   display: flex;
   justify-content: center;
+  img {
+    max-width: 80%;
+  }
+  @media only screen and (max-width: 600px) {
+    margin-top: ${(props) => props.$mobileMarginTop}px;
+    img {
+      max-width: 90%;
+      max-width: ${(props) => props.$imgSize}px;
+    }
+  }
 `;
 
 const Wrap = styled.div`
   padding-top: 230px;
   background-image: url("https://yunho-hyein.github.io/forever/images/background.jpeg");
+  width: 100%;
+  @media only screen and (max-width: 600px) {
+    padding-top: 100px;
+  }
 `;
