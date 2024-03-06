@@ -122,6 +122,13 @@ const Phone = styled.div``;
 const GridWrap = styled.div`
   padding: 0 100px;
   margin-top: 260px;
+  @media only screen and (max-width: 900px) {
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 3px 0 10px;
+    margin-top: 120px;
+  }
 `;
 
 const GreyText = styled.div`
@@ -134,6 +141,12 @@ const GreyText = styled.div`
   color: #00000080;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
+  @media only screen and (max-width: 600px) {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 `;
 
 const SubText = styled.div`
@@ -145,6 +158,12 @@ const SubText = styled.div`
   text-align: center;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
+  @media only screen and (max-width: 600px) {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 `;
 
 const Border = styled.div`
