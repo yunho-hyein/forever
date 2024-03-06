@@ -1,14 +1,13 @@
 @font-face {
-  font-family: "neon";
-  src: url("https://yunho-hyein.github.io/forever/font/YES24MyoungjoR.ttf")
-    format("truetype");
+  font-family: "YES24MyoungjoR";
+  src: url("https://yunho-hyein.github.io/forever/font/YES24MyoungjoR.otf")
+    format("opentype");
 }
 body {
-  font-family: "neon";
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "YES24MyoungjoR", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

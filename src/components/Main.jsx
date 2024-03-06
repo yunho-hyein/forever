@@ -222,6 +222,7 @@ const ImageWrap = styled.div`
 `;
 
 const Wrap = styled.div`
+  font-family: "YES24MyoungjoR";
   padding-top: 230px;
   background-image: url("https://yunho-hyein.github.io/forever/images/background.jpeg");
   width: 100%;
