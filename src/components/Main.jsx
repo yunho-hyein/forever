@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from '@emotion/styled'
+import React from "react";
+import styled from "@emotion/styled";
 
-import Masonry from '@mui/lab/Masonry'
+import Masonry from "@mui/lab/Masonry";
 
 export default function Main() {
   return (
@@ -114,15 +114,15 @@ export default function Main() {
       </GridWrap>
       <Phone></Phone>
     </Wrap>
-  )
+  );
 }
 
-const Phone = styled.div``
+const Phone = styled.div``;
 
 const GridWrap = styled.div`
   padding: 0 100px;
   margin-top: 260px;
-`
+`;
 
 const GreyText = styled.div`
   margin-top: 100px;
@@ -134,7 +134,7 @@ const GreyText = styled.div`
   color: #00000080;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
-`
+`;
 
 const SubText = styled.div`
   margin-top: 130px;
@@ -145,7 +145,7 @@ const SubText = styled.div`
   text-align: center;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
-`
+`;
 
 const Border = styled.div`
   background-color: #000000;
@@ -153,7 +153,7 @@ const Border = styled.div`
   height: 1px;
   padding: 0 100px;
   margin: 130px auto 0;
-`
+`;
 
 const Video = styled.div`
   margin-top: 200px;
@@ -164,10 +164,10 @@ const Video = styled.div`
     height: 590px;
     border: 1px solid #000000;
   }
-`
+`;
 
 const Text = styled.div`
-  margin-top: ${props => props.$marginTop};
+  margin-top: ${(props) => props.$marginTop};
   font-size: 24px;
   font-weight: 400;
   line-height: 60px;
@@ -175,15 +175,16 @@ const Text = styled.div`
   text-align: center;
   src(fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
   font-family: 'Jeju Myeongjo', serif;
-`
+`;
 
 const ImageWrap = styled.div`
-  margin-top: ${props => props.$marginTop};
+  margin-top: ${(props) => props.$marginTop};
   width: 100%;
   display: flex;
   justify-content: center;
-`
+`;
 
 const Wrap = styled.div`
-  margin-top: 230px;
-`
+  padding-top: 230px;
+  background-image: url("https://yunho-hyein.github.io/forever/images/background.jpeg");
+`;
