@@ -36,22 +36,22 @@ export default function Main() {
           alt="calendar"
         />
       </ImageWrap>
-      <Text $marginTop="160">
+      <Text $marginTop="160" $mobileMarginTop="60">
         모든 날을 함께 하고 싶은
         <br />
         소중한 사람을 만났습니다.
       </Text>
-      <Text $marginTop="50px">
+      <Text $marginTop="50" $mobileMarginTop="20">
         사월의 어느 봄날,
         <br />
         마음을 담아 초대합니다.
       </Text>
-      <Text $marginTop="80px">
+      <Text $marginTop="80" $mobileMarginTop="50">
         최용길 박복희의 차남 최윤호
         <br />
         이장영 박수정의 장녀 이혜인
       </Text>
-      <Text $marginTop="80">
+      <Text $marginTop="80" $mobileMarginTop="40">
         2024년 4월 27일 토요일 12시
         <br />
         성북동 키나
@@ -65,7 +65,9 @@ export default function Main() {
         </video>
       </Video>
       <Border />
-      <Text $marginTop="180">오시는 길</Text>
+      <Text $marginTop="180" $mobileMarginTop="80">
+        오시는 길
+      </Text>
       <ImageWrap $marginTop="120">
         <img
           src="https://yunho-hyein.github.io/forever/images/map.png"
@@ -198,8 +200,9 @@ const Text = styled.div`
   font-family: 'Jeju Myeongjo', serif;
   @media only screen and (max-width: 600px) {
     font-size: 16px;
-    margin-top: ${(props) => props.$marginTop / 2}px;
+    margin-top: ${(props) => props.$mobileMarginTop}px;
     padding:0 10px;
+    line-height: 40px;
   }
 `;
 
