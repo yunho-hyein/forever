@@ -114,6 +114,13 @@ export default function Main() {
           ))}
         </Masonry>
       </GridWrap>
+
+      <Border>
+        <div></div>
+      </Border>
+      <Text $marginTop="150" $mobileMarginTop="80">
+        연락처
+      </Text>
       <Phone></Phone>
     </Wrap>
   );

@@ -1,4 +1,10 @@
+@font-face {
+  font-family: "neon";
+  src: url("https://yunho-hyein.github.io/forever/font/YES24MyoungjoR.ttf")
+    format("truetype");
+}
 body {
+  font-family: "neon";
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
