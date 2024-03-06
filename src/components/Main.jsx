@@ -26,7 +26,7 @@ export default function Main() {
       </ImageWrap>
       <ImageWrap $marginTop="470px">
         <img
-          src="https://yunho-hyein.github.io/forever/images/main_our_wedding_day.svg"
+          src="https://yunho-hyein.github.io/forever/images/main_our_wedding_day.png"
           alt="wedding day"
         />
       </ImageWrap>
