@@ -8,7 +8,7 @@ export default function Main() {
     <Wrap>
       <ImageWrap>
         <img
-          src="https://yunho-hyein.github.io/forever/images/main_img.png"
+          src="https://yunho-hyein.github.io/forever/images/main.png"
           alt="메인 사진"
         />
       </ImageWrap>
@@ -214,7 +214,7 @@ export default function Main() {
                 alt="phone"
               />
             </a>
-            <a href="sms: 010-3734-8092">
+            <a href="sms: 010-3734-ㅣ8092">
               <img
                 src="https://yunho-hyein.github.io/forever/images/text.png"
                 alt="text"
