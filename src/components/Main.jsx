@@ -288,6 +288,9 @@ const PhoneWrap = styled.div`
 const Phone = styled.div`
   margin-top: 120px;
   padding: 0 200px 100px;
+  @media only screen and (max-width: 1000px) {
+    padding: 0 100px 100px;
+  }
   @media only screen and (max-width: 900px) {
     margin-top: 60px;
     padding: 0 30px 70px;
