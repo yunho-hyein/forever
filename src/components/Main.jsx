@@ -103,7 +103,7 @@ export default function Main() {
       </GreyText>
       <GridWrap>
         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
-          {[10, 29, 39, 5, 23].map((height, index) => (
+          {Array(18).map((height, index) => (
             <img
               key={index}
               src={`https://yunho-hyein.github.io/forever/images/0${
