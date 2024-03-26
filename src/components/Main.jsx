@@ -270,7 +270,7 @@ const Left = styled.div`
   width: 40%;
   justify-content: space-between;
   @media only screen and (max-width: 900px) {
-    width: 40%;
+    width: 48%;
   }
 `
 
