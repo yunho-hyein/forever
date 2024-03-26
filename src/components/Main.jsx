@@ -6,8 +6,9 @@ import Masonry from '@mui/lab/Masonry'
 export default function Main() {
   return (
     <Wrap>
-      <ImageWrap $imgSize="265">
+      <ImageWrap>
         <img
+          style={{ width: '265px' }}
           src="https://yunho-hyein.github.io/forever/images/main.png"
           alt="메인 사진"
         />
