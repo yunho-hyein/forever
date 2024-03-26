@@ -215,7 +215,7 @@ export default function Main() {
                 alt="phone"
               />
             </a>
-            <a href="sms: 010-3734-ㅣ8092">
+            <a href="sms: 010-3734-8092">
               <img
                 src="https://yunho-hyein.github.io/forever/images/text.png"
                 alt="text"
@@ -255,12 +255,22 @@ const Right = styled.div`
   img {
     margin-left: 50px;
   }
+  @media only screen and (max-width: 900px) {
+    width: 35%;
+    img {
+      margin-left: 10px;
+      width: 22px;
+    }
+  }
 `
 
 const Left = styled.div`
   display: flex;
   width: 40%;
   justify-content: space-between;
+  @media only screen and (max-width: 900px) {
+    width: 40%;
+  }
 `
 
 const PhoneWrap = styled.div`
@@ -269,14 +279,18 @@ const PhoneWrap = styled.div`
   width: 100%;
   font-size: 28px;
   margin-top: ${props => props.$marginTop}px;
+  @media only screen and (max-width: 900px) {
+    margin-top: ${props => props.$marginTop / 2}px;
+    font-size: 17px;
+  }
 `
 
 const Phone = styled.div`
   margin-top: 120px;
-  padding: 0 200px;
+  padding: 0 200px 100px;
   @media only screen and (max-width: 900px) {
     margin-top: 60px;
-    padding: 0 30px;
+    padding: 0 30px 70px;
   }
 `
 
