@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "@emotion/styled";
+import React from 'react'
+import styled from '@emotion/styled'
 
-import Masonry from "@mui/lab/Masonry";
+import Masonry from '@mui/lab/Masonry'
 
 export default function Main() {
   return (
@@ -106,7 +106,7 @@ export default function Main() {
           {[10, 29, 39, 5, 23].map((height, index) => (
             <img
               key={index}
-              src={`https://yunho-hyein.github.io/forever/images/photo0${
+              src={`https://yunho-hyein.github.io/forever/images/0${
                 index + 1
               }.jpg`}
               alt="사진"
@@ -244,7 +244,7 @@ export default function Main() {
         </PhoneWrap>
       </Phone>
     </Wrap>
-  );
+  )
 }
 
 const Right = styled.div`
@@ -254,30 +254,30 @@ const Right = styled.div`
   img {
     margin-left: 50px;
   }
-`;
+`
 
 const Left = styled.div`
   display: flex;
   width: 40%;
   justify-content: space-between;
-`;
+`
 
 const PhoneWrap = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 28px;
-  margin-top: ${(props) => props.$marginTop}px;
-`;
+  margin-top: ${props => props.$marginTop}px;
+`
 
 const Phone = styled.div`
   margin-top: 120px;
   padding: 0 200px;
-`;
+`
 
 const Bold = styled.span`
-  font-family: "YES24MyoungjoB";
-`;
+  font-family: 'YES24MyoungjoB';
+`
 
 const GridWrap = styled.div`
   padding: 0 100px;
@@ -289,7 +289,7 @@ const GridWrap = styled.div`
     padding: 0 3px 0 10px;
     margin-top: 120px;
   }
-`;
+`
 
 const GreyText = styled.div`
   margin-top: 100px;
@@ -306,7 +306,7 @@ const GreyText = styled.div`
     line-height: 20px;
     padding: 0 10px;
   }
-`;
+`
 
 const SubText = styled.div`
   margin-top: 130px;
@@ -322,7 +322,7 @@ const SubText = styled.div`
     line-height: 20px;
     padding: 0 10px;
   }
-`;
+`
 
 const Border = styled.div`
   width: 100%;
@@ -337,10 +337,10 @@ const Border = styled.div`
   @media only screen and (max-width: 600px) {
     margin: 60px auto 0;
   }
-`;
+`
 
 const Text = styled.div`
-  margin-top: ${(props) => props.$marginTop}px;
+  margin-top: ${props => props.$marginTop}px;
   font-size: 24px;
   font-weight: 400;
   line-height: 60px;
@@ -348,36 +348,36 @@ const Text = styled.div`
   text-align: center;
   @media only screen and (max-width: 600px) {
     font-size: 16px;
-    margin-top: ${(props) => props.$mobileMarginTop}px;
+    margin-top: ${props => props.$mobileMarginTop}px;
     padding: 0 10px;
     line-height: 40px;
   }
-`;
+`
 
 const ImageWrap = styled.div`
-  margin-top: ${(props) => props.$marginTop}px;
+  margin-top: ${props => props.$marginTop}px;
   width: 100%;
   display: flex;
   justify-content: center;
   img {
-    width: ${(props) => props.$maxWidth}px;
+    width: ${props => props.$maxWidth}px;
     max-width: 80%;
   }
   @media only screen and (max-width: 600px) {
-    margin-top: ${(props) => props.$mobileMarginTop}px;
+    margin-top: ${props => props.$mobileMarginTop}px;
     img {
       max-width: 90%;
-      max-width: ${(props) => props.$imgSize}px;
+      max-width: ${props => props.$imgSize}px;
     }
   }
-`;
+`
 
 const Wrap = styled.div`
-  font-family: "YES24MyoungjoR";
+  font-family: 'YES24MyoungjoR';
   padding-top: 230px;
-  background-image: url("https://yunho-hyein.github.io/forever/images/background.jpeg");
+  background-image: url('https://yunho-hyein.github.io/forever/images/background.jpeg');
   width: 100%;
   @media only screen and (max-width: 600px) {
     padding-top: 100px;
   }
-`;
+`
