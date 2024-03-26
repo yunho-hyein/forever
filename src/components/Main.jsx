@@ -309,7 +309,7 @@ const GridWrap = styled.div`
     padding: 0 30px;
   }
   @media only screen and (max-width: 600px) {
-    padding: 0 3px 0 10px;
+    padding: 0 0 0 16px;
     margin-top: 120px;
   }
 `
