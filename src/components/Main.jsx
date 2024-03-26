@@ -103,18 +103,19 @@ export default function Main() {
       </GreyText>
       <GridWrap>
         <Masonry columns={{ xs: 1, sm: 2, md: 3 }} spacing={2}>
-          {Array(18).map((height, index) => (
-            <img
-              key={index}
-              src={`https://yunho-hyein.github.io/forever/images/0${
-                index + 1
-              }.jpg`}
-              alt="사진"
-            />
-          ))}
+          {Array(18)
+            .fill()
+            .map((height, index) => (
+              <img
+                key={index}
+                src={`https://yunho-hyein.github.io/forever/images/0${
+                  index + 1
+                }.jpg`}
+                alt="사진"
+              />
+            ))}
         </Masonry>
       </GridWrap>
-
       <Border>
         <div></div>
       </Border>
@@ -273,6 +274,10 @@ const PhoneWrap = styled.div`
 const Phone = styled.div`
   margin-top: 120px;
   padding: 0 200px;
+  @media only screen and (max-width: 900px) {
+    margin-top: 60px;
+    padding: 0 30px;
+  }
 `
 
 const Bold = styled.span`
